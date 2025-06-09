@@ -131,6 +131,92 @@ Since this is a Flask application requiring server-side functionality, here are 
 
 ---
 
+## 💡 Features Overview
+
+| Feature | Status | Description |
+|---------|--------|-------------|
+| ✅ Real-time Monitoring | Complete | Live CPU and memory tracking |
+| ✅ Interactive Charts | Complete | Responsive doughnut charts with animations |
+| ✅ Warning System | Complete | Alerts when usage exceeds 80% |
+| ✅ Dark Mode | Complete | Toggle between light and dark themes |
+| ✅ Responsive Design | Complete | Works on all devices |
+| ✅ Authentication | Complete | Secure login system |
+| ✅ Docker Support | Complete | Containerized deployment |
+| 🔄 Historical Data | In Progress | Store and display historical metrics |
+| 🔄 Multiple Users | Planned | Support for multiple user accounts |
+| 🔄 Data Export | Planned | Download metrics as CSV |
+
+---
+
+## 🔧 Technical Details
+
+### Architecture
+- **Backend**: Flask web server with REST API endpoints
+- **Data Source**: psutil library for system metrics
+- **Frontend**: Modern HTML5/CSS3/JavaScript with Chart.js
+- **Session Management**: Flask-Session for user authentication
+- **Real-time Updates**: AJAX polling every 5 seconds
+
+### API Endpoints
+- `GET /` - Main dashboard (requires authentication)
+- `POST /login` - User authentication
+- `GET /data` - JSON API for system metrics
+- `GET /logout` - Session termination
+
+### Browser Compatibility
+- ✅ Chrome 90+
+- ✅ Firefox 88+
+- ✅ Safari 14+
+- ✅ Edge 90+
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open source community amazing! Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact
+
+**Project Creator**: Your Name
+- GitHub: [@your-username](https://github.com/your-username)
+- Email: your.email@example.com
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+
+**Project Link**: [https://github.com/your-username/Python-System-Monitor](https://github.com/your-username/Python-System-Monitor)
+
+---
+
+## 🙏 Acknowledgments
+
+- [Flask](https://flask.palletsprojects.com/) - The web framework that powers the backend
+- [Chart.js](https://www.chartjs.org/) - Beautiful and responsive charts
+- [psutil](https://github.com/giampaolo/psutil) - Cross-platform system monitoring
+- [Font Awesome](https://fontawesome.com/) - Icons used throughout the interface
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you found it helpful! ⭐**
+
+Made with ❤️ for the developer community
+
+</div>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [Python]: https://img.shields.io/badge/Python-3C873A?style=for-the-badge&labelColor=black&logo=python&logoColor=3C873A
 [Python-url]: https://www.python.org
