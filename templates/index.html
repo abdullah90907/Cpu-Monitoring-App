@@ -5,34 +5,76 @@
     <meta charset="utf-8">
     <title>System Monitoring Dashboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body>
     <div class="container">
-        <h1>System Monitoring Dashboard</h1>
-        <div class="data">
-            <h2>CPU Usage</h2>
-            <p><span id="cpu-usage">{{ cpu_usage }}%</span></p>
-            <canvas id="cpu-chart"></canvas>
+        <div class="header">
+            <h1><i class="fas fa-tachometer-alt"></i> System Monitor</h1>
+            <button class="dark-mode-toggle">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
         </div>
-        <div class="data">
-            <h2>Memory Usage</h2>
-            <p><span id="mem-usage">{{ mem_usage }}%</span></p>
-            <canvas id="mem-chart"></canvas>
+        
+        <!-- Horizontal layout for CPU and Memory -->
+        <div class="metrics-container">
+            <div class="metric-card cpu-card">
+                <div class="metric-header">
+                    <i class="fas fa-microchip"></i>
+                    <h2>CPU Usage</h2>
+                </div>
+                <div class="metric-content">
+                    <div class="chart-container">
+                        <canvas id="cpu-chart"></canvas>
+                        <div class="chart-center">
+                            <span id="cpu-usage" class="usage-value">{{ cpu_usage }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metric-card memory-card">
+                <div class="metric-header">
+                    <i class="fas fa-memory"></i>
+                    <h2>Memory Usage</h2>
+                </div>
+                <div class="metric-content">
+                    <div class="chart-container">
+                        <canvas id="mem-chart"></canvas>
+                        <div class="chart-center">
+                            <span id="mem-usage" class="usage-value">{{ mem_usage }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="data">
-            <h2>Alerts</h2>
-            <div id="msg" class="alert alert-ok"></div>
+        
+        <!-- Alerts section -->
+        <div class="alerts-section">
+            <div class="alert-card">
+                <div class="alert-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h2>System Status</h2>
+                </div>
+                <div id="msg" class="alert alert-ok"></div>
+            </div>
         </div>
-        <button class="dark-mode-toggle">
-            <i class="fas fa-sun sun-icon"></i>
-            <i class="fas fa-moon moon-icon"></i>
-        </button>
-        <div class="logout-button-container">
-            <a href="/logout" class="logout-button">Logout</a>
+        
+        <div class="footer">
+            <div class="update-info">
+                <i class="fas fa-clock"></i>
+                <span>Next Update: <span id="next-update-time"></span></span>
+            </div>
+            <div class="logout-button-container">
+                <a href="/logout" class="logout-button">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </div>
         </div>
-        <div class="update-time">Next Update: <span id="next-update-time"></span></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
