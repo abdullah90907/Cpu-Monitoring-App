@@ -192,9 +192,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Project Creator**: Your Name
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+- GitHub: [@your-username](https://github.com/abdullah90907)
+- Email: abdullahsiddique773@gmail.com
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/mr-abdullah-siddique/)
 
 **Project Link**: [https://github.com/your-username/Python-System-Monitor](https://github.com/your-username/Python-System-Monitor)
 
