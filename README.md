@@ -191,7 +191,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**Project Creator**: Your Name
+**Project Creator**: Abdullah Siddique
 - GitHub: [@abdullah90907](https://github.com/abdullah90907)
 - Email: abdullahsiddique773@gmail.com
 - LinkedIn: [mr-abdullah-siddique](https://www.linkedin.com/in/mr-abdullah-siddique/)
